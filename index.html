@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="quiz.js" defer></script>
+    <link rel="stylesheet" href="style.css" media="all">
+    <title>Coding Quiz Challenge</title>
+</head>
+<body>
+    <main>
+        <div id="intro-container">
+            <br>
+            <h1>Think You Know Code? Prove It!🚀</h1> <br>
+            <p id="subhead">From syntax to algorithms—let's see what you've got! 👨‍💻🧠</p>
+            <button class="start" role="button">Start Quiz!</button> 
+        </div>
+        
+        <div class="quiz-container" style="display: none;">
+            <p id="progress">Question <span id="current-question"></span> of <span id="total-questions"></span></p>
+            <br>
+            <h3 id="question-text" aria-live="polite">questions</h3><br>
+            
+            <div id="options-container"></div>
+            
+            <button class="next" style="display: none;" role="button">Next Question</button>
+            
+        </div>
+
+        <div id="score" style="display: none;">Your Score: <span>0</span></div>
+
+    </main>
+</body>
+</html>
